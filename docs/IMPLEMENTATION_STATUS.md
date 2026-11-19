@@ -86,3 +86,23 @@ No se encontraron archivos verificables para esas competiciones en las rutas con
 - UEFA Europa League 2025/26.
 - UEFA Conference League 2025/26.
 - No se ha conectado todavía la base al backend de producción ni se han importado estadísticas de jugadores.
+
+
+## Importación adicional — clasificatorias UEFA 2025/26 — 2026-11-19
+- UEFA Europa League: importado `2025-26/elq.txt`, 82 partidos declarados en el encabezado de la fuente; corresponde solo a rondas clasificatorias.
+- UEFA Conference League: importado `2025-26/confq.txt`, 256 partidos declarados en el encabezado de la fuente; corresponde solo a rondas clasificatorias.
+- Ambos archivos se copiaron sin alterar desde `openfootball/champions-league`. Manifiesto: `data/metadata/openfootball_uefa_qualifiers_2025-26_2026-11-19.json`.
+- El repositorio fuente declara CC0-1.0 en `LICENSE.md`. La licencia incluye una cláusula que no garantiza la liberación de derechos de terceros; se conserva la procedencia y no se asume que CC0 resuelva automáticamente todos los derechos subyacentes.
+- La inspección del árbol completo de la temporada 2025/26 no encontró `el.txt` ni `conf.txt` de fase principal. Por tanto, las competiciones siguen incompletas en el catálogo: solo hay cobertura clasificatoria.
+
+## Revisión de Liga 1 Perú — 2026-11-19
+- No se encontró un dataset público con licencia clara para redistribuir resultados de Liga 1.
+- El dataset del IPD en datosabiertos.gob.pe está bajo Open Data Commons Attribution, pero contiene el registro administrativo de ligas deportivas, no resultados/fixtures de partidos.
+- Footiqo y FootyStats muestran resultados y exportaciones, pero no se verificó una licencia que autorice la copia y redistribución de esos datos en FijasPro. No se importaron.
+- La búsqueda identificó proyectos comunitarios de resultados de la selección peruana, pero no corresponden a Liga 1. Liga 1 Perú queda pendiente de una fuente autorizada o permiso explícito.
+
+## Estado de las competiciones pendientes
+- Liga 1 Perú: sin fuente redistribuible verificada.
+- UEFA Europa League 2025/26: solo clasificatorias importadas (82 según encabezado); fase principal no localizada.
+- UEFA Conference League 2025/26: solo clasificatorias importadas (256 según encabezado); fase principal no localizada.
+- Estos conteos son los declarados por los encabezados de los archivos fuente; aún no son conteos normalizados, deduplicados ni validados fila por fila.
