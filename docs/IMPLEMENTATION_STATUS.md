@@ -68,3 +68,21 @@ Solo se marcará una competición/temporada como completa después de:
 - UEFA Nations League.
 
 No se encontraron archivos verificables para esas competiciones en las rutas consultadas; no se han creado registros sustitutos ni se han copiado datos de fuentes con condiciones no verificadas.
+
+
+## Importaciones adicionales — actualización 2026-11-19 12:21 UTC
+- Copa Libertadores 2025: importada desde `openfootball/south-america/copa-libertadores/2025_copal.txt`; encabezado de fuente: 155 partidos.
+- Copa Sudamericana 2025: importada desde `openfootball/south-america/copa-libertadores/2025_copas.txt`; encabezado de fuente: 121 partidos.
+- UEFA Nations League 2024/25: importada desde `openfootball/internationals/uefa_nations_league/2024_uefa_nations_league.txt`; encabezado de fuente: 158 partidos.
+- Archivos copiados sin alterar en `data/raw/openfootball/`; manifiesto: `data/metadata/openfootball_cups_nations_import_2026-11-19.json`.
+- Los repositorios upstream de OpenFootball declaran dedicación al dominio público para esquema/datos/scripts.
+
+## Pendientes que requieren otra fuente o permiso
+- Liga 1 Perú: no se encontró una fuente abierta con licencia clara que permita incorporar y redistribuir resultados de partidos. El dataset del IPD consultado contiene registro de ligas, no resultados. No se importó.
+- UEFA Europa League y Conference League 2025/26: el repositorio OpenFootball consultado declara incluir estas competiciones, pero no se localizaron archivos de esa temporada en las rutas verificadas. Se encontró open-matchday para 2026/27; su propio aviso limita el uso a fines informativos no comerciales y deja vigentes los términos de los proveedores upstream (ESPN, football-data.co.uk, fixturedownload, Soccerway, etc.). No se copió al repositorio público sin autorización específica de esos proveedores.
+
+## Cobertura pendiente tras esta actualización
+- Liga 1 Perú.
+- UEFA Europa League 2025/26.
+- UEFA Conference League 2025/26.
+- No se ha conectado todavía la base al backend de producción ni se han importado estadísticas de jugadores.
