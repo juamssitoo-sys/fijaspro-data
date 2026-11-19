@@ -30,8 +30,15 @@ No se encontró un archivo LICENSE en la raíz durante esta inspección. El READ
 ### Fútbol
 open-matchday documenta 75 competiciones y archivos CSV para la temporada 2026/27, pero no representa por sí mismo el histórico completo 2025/26. Su DISCLAIMER limita el uso a fines informativos no comerciales, exige atribución y deja vigentes las condiciones de los proveedores upstream (incluidos ESPN y football-data.co.uk). Estadísticas de tiros/faltas/tarjetas/corners aparecen solo para una fracción de partidos. No se han copiado CSV ni datos de proveedores.
 
+## Importación inicial realizada — 2026-11-19
+- Se importaron 5 archivos JSON de OpenFootball para la temporada 2025/26: Premier League (380), LaLiga (380), Bundesliga (306), Ligue 1 (306) y Serie A (380).
+- Total importado: 1,752 registros de partidos en formato fuente, sin normalización ni enriquecimiento.
+- Archivos en `data/raw/openfootball/2025-26/`; manifiesto en `data/metadata/openfootball_import_2025-26.json`.
+- Los archivos se leyeron de vuelta desde GitHub y se parsearon como JSON correctamente.
+- Fuente declara CC0-1.0 para su esquema, datos y scripts: https://github.com/openfootball/football.json
+
 ## No realizado todavía
-- No hay partidos ni estadísticas de jugadores descargados en `data/`.
+- No hay estadísticas de jugadores descargadas en `data/`.
 - No se ha validado un recuento histórico de partidos por liga/temporada.
 - No se ha conectado esta base al backend de producción FijasPro.
 - No se ha confirmado la cobertura de Liga 1 Perú, Libertadores, Sudamericana y Nations League con una fuente que permita almacenamiento/redistribución.
