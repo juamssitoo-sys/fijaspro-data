@@ -26,7 +26,11 @@ def iso_date(month: str, day: str, year: int) -> str:
 
 def parse_score_tail(score: str, tail: str) -> dict:
     parts = [int(x) for x in re.split(r"\s*[-–]\s*", score)]
-    result = {"home_score": parts[0], "away_score": parts[1],
+    # In OpenFootball, "5-6 pen. 2-1 a.e.t." means penalties 5-6,
+    # while 2-1 is the match score after extra time.
+    penalty_score = re.search(r"pen\.\s*(\d+)\s*[-–]\s*(\d+)", tail, re.I)
+    match_score = [int(penalty_score.group(1)), int(penalty_score.group(2))] if penalty_score else parts
+    result = {"home_score": match_score[0], "away_score": match_score[1],
               "half_time_home_score": None, "half_time_away_score": None,
               "penalty_home_score": None, "penalty_away_score": None,
               "extra_time": "a.e.t." in tail.lower(),
@@ -36,9 +40,8 @@ def parse_score_tail(score: str, tail: str) -> dict:
     ht = re.search(r"\((\d+)\s*[-–]\s*(\d+)(?:,\s*\d+\s*[-–]\s*\d+)?\)", tail)
     if ht:
         result["half_time_home_score"], result["half_time_away_score"] = int(ht.group(1)), int(ht.group(2))
-    pens = re.search(r"pen\.\s*(\d+)\s*[-–]\s*(\d+)", tail, re.I)
-    if pens:
-        result["penalty_home_score"], result["penalty_away_score"] = int(pens.group(1)), int(pens.group(2))
+    if penalty_score:
+        result["penalty_home_score"], result["penalty_away_score"] = parts[0], parts[1]
     return result
 
 def split_teams_and_score(text: str):
