@@ -65,6 +65,10 @@ Ver [docs/SOURCES.md](docs/SOURCES.md) y [docs/COVERAGE.md](docs/COVERAGE.md). L
 - `scripts/` — ingesta, normalización, validación y reportes de cobertura.
 - `docs/` — documentación, fuentes y decisiones.
 
+## Actualización automática de resultados
+
+Requisito funcional: al finalizar cada partido, FijasPro debe recuperar y guardar automáticamente el resultado y las estadísticas disponibles, sin depender de una actualización manual ni de que el usuario mantenga la web abierta. Se implementará mediante webhook oficial o worker de polling en backend, según el proveedor y sus límites. Incluye reintentos, upsert idempotente, reconciliación de correcciones y trazabilidad. Ver [docs/AUTOMATIC_MATCH_UPDATES.md](docs/AUTOMATIC_MATCH_UPDATES.md). Actualmente está documentado, todavía no desplegado.
+
 ## Validación antes de conectar FijasPro
 
 No declarar la base completa hasta publicar recuentos por competición, temporada, fase, partidos, jugadores y campos estadísticos; además de duplicados, nulos y última fecha disponible.
