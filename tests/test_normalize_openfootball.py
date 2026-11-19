@@ -29,6 +29,8 @@ class ParserTests(unittest.TestCase):
 """)
         self.assertTrue(rows[0]["penalties"])
         self.assertTrue(rows[0]["extra_time"])
+        self.assertEqual(rows[0]["home_score"], 2)
+        self.assertEqual(rows[0]["away_score"], 1)
         self.assertEqual(rows[0]["penalty_home_score"], 5)
         self.assertEqual(rows[0]["penalty_away_score"], 6)
 
