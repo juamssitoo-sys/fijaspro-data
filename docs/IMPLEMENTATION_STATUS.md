@@ -50,3 +50,21 @@ Solo se marcará una competición/temporada como completa después de:
 3. validar cobertura de fechas, partidos, equipos y jugadores;
 4. medir duplicados y nulos;
 5. publicar un manifiesto de cobertura y fuente.
+
+
+## Importaciones adicionales — 2026-11-19
+- Brasileirão Série A 2025: importado desde `openfootball/south-america`, archivo `brazil/2025_br1.txt`; encabezado de fuente: 380 partidos.
+- Argentina Primera División 2025: importado desde `openfootball/south-america`, archivo `argentina/2025_ar1.txt`; encabezado de fuente: 240 partidos, solo etapa `1° Semestre`. No se declara temporada completa.
+- UEFA Champions League 2025/26: importado desde `openfootball/champions-league`, archivo `2025-26/cl.txt`; encabezado de fuente: 189 partidos.
+- Los tres archivos se guardaron sin alterar en `data/raw/openfootball/south-america/` y `data/raw/openfootball/champions-league/`. Manifiesto: `data/metadata/openfootball_additional_import_2026-11-19.json`.
+- Las fuentes upstream declaran dedicación al dominio público / CC0. Se conserva la atribución de origen y no se atribuyen estadísticas de jugadores a estos archivos.
+
+## Competiciones del catálogo todavía sin importación confirmada
+- Liga 1 Perú.
+- Copa Libertadores.
+- Copa Sudamericana.
+- UEFA Europa League.
+- UEFA Conference League.
+- UEFA Nations League.
+
+No se encontraron archivos verificables para esas competiciones en las rutas consultadas; no se han creado registros sustitutos ni se han copiado datos de fuentes con condiciones no verificadas.
