@@ -1,0 +1,85 @@
+{
+  "date_range": {
+    "from": "2025-01-01",
+    "to": "2026-11-19"
+  },
+  "football": [
+    {
+      "id": "soccer_epl",
+      "name": "Premier League",
+      "country": "England"
+    },
+    {
+      "id": "soccer_spain_la_liga",
+      "name": "LaLiga",
+      "country": "Spain"
+    },
+    {
+      "id": "soccer_france_ligue_one",
+      "name": "Ligue 1",
+      "country": "France"
+    },
+    {
+      "id": "soccer_brazil_campeonato",
+      "name": "Brasileirão",
+      "country": "Brazil"
+    },
+    {
+      "id": "soccer_peru_liga_1",
+      "name": "Liga 1 Perú",
+      "country": "Peru"
+    },
+    {
+      "id": "soccer_argentina_primera_division",
+      "name": "Primera División Argentina",
+      "country": "Argentina"
+    },
+    {
+      "id": "soccer_uefa_champs_league",
+      "name": "UEFA Champions League",
+      "country": "Europe"
+    },
+    {
+      "id": "soccer_uefa_europa_league",
+      "name": "UEFA Europa League",
+      "country": "Europe"
+    },
+    {
+      "id": "soccer_uefa_europa_conference_league",
+      "name": "UEFA Europa Conference League",
+      "country": "Europe"
+    },
+    {
+      "id": "soccer_conmebol_libertadores",
+      "name": "Copa Libertadores",
+      "country": "South America"
+    },
+    {
+      "id": "soccer_conmebol_copa_sudamericana",
+      "name": "Copa Sudamericana",
+      "country": "South America"
+    },
+    {
+      "id": "soccer_uefa_nations_league",
+      "name": "UEFA Nations League",
+      "country": "International"
+    }
+  ],
+  "basketball": [
+    {
+      "id": "basketball_nba",
+      "name": "NBA",
+      "country": "United States",
+      "season_types": [
+        "preseason",
+        "regular_season",
+        "in_season_tournament",
+        "play_in",
+        "playoffs",
+        "all_star",
+        "exhibition"
+      ]
+    }
+  ],
+  "note": "Initial catalog extracted from the current FijasPro backend configuration; verify against frontend before declaring complete."
+}
