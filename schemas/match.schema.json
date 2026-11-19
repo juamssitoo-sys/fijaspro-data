@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fijaspro-data/schemas/match.schema.json",
+  "title": "FijasPro match record",
+  "type": "object",
+  "required": [
+    "sport",
+    "competition_id",
+    "season",
+    "date",
+    "status",
+    "source"
+  ],
+  "properties": {
+    "match_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sport": {
+      "enum": [
+        "football",
+        "basketball"
+      ]
+    },
+    "competition_id": {
+      "type": "string"
+    },
+    "competition_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "season": {
+      "type": "string"
+    },
+    "season_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "round": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string"
+    },
+    "home_team_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "home_team": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "away_team_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "away_team": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "home_score": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "away_score": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "provider",
+        "source_url",
+        "fetched_at_utc"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "provider_record_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fetched_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dataset_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
