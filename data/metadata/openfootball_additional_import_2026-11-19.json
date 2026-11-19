@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-11-19",
+  "note": "Raw Football.TXT files imported unchanged. Match counts are source header counts, not independent normalized-row counts.",
+  "imports": [
+    {
+      "repo": "openfootball/south-america",
+      "source": "brazil/2025_br1.txt",
+      "dest": "data/raw/openfootball/south-america/brazil/2025_br1.txt",
+      "competition": "Brasileirão Série A 2025",
+      "matches": 380,
+      "scope": "temporada 2025",
+      "source_sha": "4dcb1a52faaec9dabb08079ea608180430515c01",
+      "commit_sha": "328cf98154cb51cca1502fbd4ac892c937af13dd",
+      "bytes": 30429
+    },
+    {
+      "repo": "openfootball/south-america",
+      "source": "argentina/2025_ar1.txt",
+      "dest": "data/raw/openfootball/south-america/argentina/2025_ar1.txt",
+      "competition": "Argentina Primera División 2025",
+      "matches": 240,
+      "scope": "solo 1° semestre; no representa todo 2025",
+      "source_sha": "8767404c5dfa2014e5f6c0e8d62ec60fabf004f5",
+      "commit_sha": "4e4dcaababb00f9c99b9f9c4e8d6889d515abe08",
+      "bytes": 18895
+    },
+    {
+      "repo": "openfootball/champions-league",
+      "source": "2025-26/cl.txt",
+      "dest": "data/raw/openfootball/champions-league/2025-26/cl.txt",
+      "competition": "UEFA Champions League 2025/26",
+      "matches": 189,
+      "scope": "etapas league, playoffs y finales según encabezado fuente",
+      "source_sha": "0b794b1f2f396c0fff29f910904fe27ff7b98c7a",
+      "commit_sha": "f5485508050884ec7bf6c6336014898ce8a94650",
+      "bytes": 15167
+    }
+  ],
+  "license": "Upstream OpenFootball repositories declare public-domain dedication / CC0. Source repositories: https://github.com/openfootball/south-america and https://github.com/openfootball/champions-league"
+}
