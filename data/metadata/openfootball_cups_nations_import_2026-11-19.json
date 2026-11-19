@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-11-19",
+  "source_license": "Upstream OpenFootball repositories dedicate schema/data/scripts to public domain; raw files copied unchanged.",
+  "imports": [
+    {
+      "repo": "openfootball/south-america",
+      "source": "copa-libertadores/2025_copal.txt",
+      "dest": "data/raw/openfootball/south-america/copa-libertadores/2025_copal.txt",
+      "competition": "Copa Libertadores 2025",
+      "matches": 155,
+      "source_sha": "e368ff228dd7b65964b54647d34d74cdef6d9b84",
+      "commit_sha": "662d6c081b2a0b4af648336973b3d8f41c3f562d",
+      "bytes": 13084,
+      "source_match_count": 155
+    },
+    {
+      "repo": "openfootball/south-america",
+      "source": "copa-libertadores/2025_copas.txt",
+      "dest": "data/raw/openfootball/south-america/copa-libertadores/2025_copas.txt",
+      "competition": "Copa Sudamericana 2025",
+      "matches": 121,
+      "source_sha": "731ca105b5768cca9a39acfcb243fe48577b1b2d",
+      "commit_sha": "29ef066be3f1e3e7ed62ba8bf0397d00a6e47a64",
+      "bytes": 9418,
+      "source_match_count": 121
+    },
+    {
+      "repo": "openfootball/internationals",
+      "source": "uefa_nations_league/2024_uefa_nations_league.txt",
+      "dest": "data/raw/openfootball/internationals/uefa_nations_league/2024_uefa_nations_league.txt",
+      "competition": "UEFA Nations League 2024/25",
+      "source_sha": "713793570231aacba04e113dbb9ccd8b0027f693",
+      "commit_sha": "1e3de24f2ff717c669bb181d7822dccd1000ec8e",
+      "bytes": 21329,
+      "source_match_count": 158
+    }
+  ]
+}
