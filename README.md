@@ -4,7 +4,7 @@ Repositorio independiente para el archivo histórico deportivo de FijasPro.
 
 **Ventana inicial:** 2025-01-01 a 2026-11-19 (ampliable).  
 **Deportes:** fútbol y NBA.  
-**Estado:** estructura inicial; la ingesta de datos está pendiente de validación por fuente.
+**Estado al 2026-11-19:** 13 archivos fuente importados (3,333 conteos declarados; no normalizados). La cobertura por competición y los bloqueos de licencia están en [docs/COVERAGE.md](docs/COVERAGE.md).
 
 ## Objetivo
 
@@ -54,7 +54,7 @@ Principios:
 
 ## Fuentes evaluadas
 
-Ver [docs/SOURCES.md](docs/SOURCES.md). La presencia de un dato en Internet no concede automáticamente derechos para copiarlo, redistribuirlo o usarlo para entrenar modelos. Este repositorio no debe almacenar dumps de proveedores hasta revisar sus condiciones y licencias upstream.
+Ver [docs/SOURCES.md](docs/SOURCES.md) y [docs/COVERAGE.md](docs/COVERAGE.md). La presencia de un dato en Internet no concede automáticamente derechos para copiarlo, redistribuirlo o usarlo para entrenar modelos. Este repositorio no debe almacenar dumps de proveedores hasta revisar sus condiciones y licencias upstream.
 
 ## Estructura prevista
 
