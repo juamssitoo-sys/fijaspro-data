@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-11-19",
+  "note": "Raw Football.TXT files copied unchanged. Counts are source header declarations, not independently normalized row counts.",
+  "source_license": "openfootball/champions-league LICENSE.md declares CC0-1.0. CC0 does not guarantee clearance of third-party rights in all underlying content; preserve provenance and review upstream claims.",
+  "imports": [
+    {
+      "repo": "openfootball/champions-league",
+      "source": "2025-26/elq.txt",
+      "dest": "data/raw/openfootball/champions-league/2025-26/elq.txt",
+      "competition": "UEFA Europa League 2025/26 - qualifying rounds",
+      "source_header_matches": 82,
+      "source_sha": "b2c056ca599742dfa662249f452baf298664d5f9",
+      "commit_sha": "2fa643233ef179f54207621673f5e1a8625f6fb9",
+      "bytes": 6446,
+      "scope": "solo rondas clasificatorias; la fase principal no está incluida en el archivo"
+    },
+    {
+      "repo": "openfootball/champions-league",
+      "source": "2025-26/confq.txt",
+      "dest": "data/raw/openfootball/champions-league/2025-26/confq.txt",
+      "competition": "UEFA Conference League 2025/26 - qualifying rounds",
+      "source_header_matches": 256,
+      "source_sha": "ac9927b1fac46402401d33a537cb146257262c08",
+      "commit_sha": "db30fc1812fb6e89b44deeedeccbb1868e27fb29",
+      "bytes": 19552,
+      "scope": "solo rondas clasificatorias; la fase principal no está incluida en el archivo"
+    }
+  ]
+}
