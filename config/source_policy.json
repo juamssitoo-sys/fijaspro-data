@@ -1,0 +1,47 @@
+{
+  "policy_version": "1.0",
+  "reviewed_at": "2026-11-19",
+  "date_range": {
+    "start": "2025-01-01",
+    "end": "2026-11-19"
+  },
+  "rules": [
+    "Do not mirror, commit, or redistribute third-party sports data unless upstream terms explicitly permit this exact use.",
+    "Publicly accessible does not mean licensed for republication or AI use.",
+    "Keep credentials in environment secrets; never commit API keys.",
+    "Store null for unavailable statistics; never infer missing values as zero.",
+    "Record provider, source URL, source record ID, fetched_at_utc, license reference, and dataset version for every imported partition."
+  ],
+  "sources": {
+    "nba_data": {
+      "url": "https://github.com/llimllib/nba_data",
+      "access": "public read-through dataset",
+      "status": "review_required",
+      "reason": "No repository LICENSE file found during inspection; upstream data originates from stats.nba.com and ESPN. Do not mirror until rights are confirmed.",
+      "tables": [
+        "games",
+        "team_game_logs",
+        "player_game_logs",
+        "team_box",
+        "player_box",
+        "player_season_stats",
+        "team_season_stats",
+        "game_events",
+        "schedule"
+      ],
+      "coverage_notes": "Stats.nba.com from 2009-10; ESPN net-points data from 2018-19. Game IDs encode preseason, regular season, All-Star, playoffs, Play-In and NBA Cup final."
+    },
+    "open_matchday": {
+      "url": "https://github.com/oladeeayo/open-matchday",
+      "access": "public CSV files",
+      "status": "conditional_noncommercial_attribution",
+      "reason": "Dataset terms allow informational non-commercial use with attribution, but upstream providers' terms still apply. Some upstream data is personal/non-commercial only. Do not mirror or redistribute without confirming rights for every upstream source.",
+      "coverage": "2026/27 current season; 75 competitions; uneven stats; not a full 2025-26 archive."
+    },
+    "football_data_co_uk": {
+      "url": "https://www.football-data.co.uk/",
+      "status": "blocked_without_permission",
+      "reason": "Upstream terms restrict use; no automated AI/product dataset ingestion without express permission."
+    }
+  }
+}
