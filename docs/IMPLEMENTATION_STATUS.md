@@ -131,3 +131,9 @@ No se importan fuentes sin licencia/permiso verificable, aunque permitan consult
 - Los cinco JSON de primera división 2025/26 fueron parseados desde el repositorio destino. Los ocho archivos Football.TXT permanecen en bruto; sus cantidades son declaraciones de encabezado.
 - No se rellenaron Liga 1, fases principales UEFA ni NBA con datos sin derechos verificados.
 - Pendientes técnicos reales: parser/normalizador, validación fila por fila, deduplicación, estadísticas de jugadores/equipos, auditoría NBA y conexión al backend. No se declara producción ni integración completada.
+
+
+## Requisito operativo: actualización automática al terminar cada partido
+- Se documentó como requisito obligatorio el seguimiento de fixtures, detección de estado final, descarga del detalle, upsert idempotente, recálculo de métricas y reconciliación de correcciones.
+- Especificación: [docs/AUTOMATIC_MATCH_UPDATES.md](AUTOMATIC_MATCH_UPDATES.md).
+- Estado: documentado, no desplegado. Requiere un feed autorizado y conectar el repositorio al backend.
