@@ -106,3 +106,20 @@ No se encontraron archivos verificables para esas competiciones en las rutas con
 - UEFA Europa League 2025/26: solo clasificatorias importadas (82 según encabezado); fase principal no localizada.
 - UEFA Conference League 2025/26: solo clasificatorias importadas (256 según encabezado); fase principal no localizada.
 - Estos conteos son los declarados por los encabezados de los archivos fuente; aún no son conteos normalizados, deduplicados ni validados fila por fila.
+
+
+## Búsqueda ampliada de fuentes — 2026-11-19 12:34 UTC
+### UEFA Europa League y Conference League 2025/26
+- Se inspeccionó el árbol completo de `openfootball/champions-league` en la rama `master`: la carpeta `2025-26` contiene `cl.txt`, `clq.txt`, `elq.txt` y `confq.txt`, pero no `el.txt` ni `conf.txt`. Las rutas de fase principal devuelven 404. Por ello, los 82 y 256 partidos importados siguen siendo únicamente clasificatorias.
+- UEFA publica páginas oficiales con resultados de la temporada completa: Europa League (`https://www.uefa.com/uefaeuropaleague/news/029c-1e9ad67620f2-05c31d01f0f4-1000--2025-26-europa-league-fixtures-and-results-quarter-final/`) y Conference League (`https://es.uefa.com/uefaconferenceleague/news/029c-1e9b4aa1be84-fcdd372d089f-1000--calendario-y-resultados-de-la-conference-league-2025-26/`). Son fuentes de verificación y consulta, pero no se identificó una licencia abierta que permita copiar y redistribuir masivamente sus registros.
+- FixtureDownload ofrece exportación CSV/XLSX/JSON para ambas temporadas (`https://fixturedownload.com/results/europa-league-2025`, `https://fixturedownload.com/results/conference-league-2025`). No se verificó una licencia de redistribución, por lo que no se importó.
+- La documentación DeepWiki del repositorio OpenFootball describe convenciones de nombres `el.txt` y `conf.txt`, pero la inspección del árbol Git real prevalece: esos dos archivos no están presentes en la temporada 2025/26 consultada.
+### Liga 1 Perú
+- La web oficial `https://liga1.pe/` publica resultados/fixtures mediante widgets identificados como proporcionados por SofaScore. La LFPP anunció su web institucional con fixture, tablas y resultados por torneo (`https://liga1.pe/la-liga-de-futbol-profesional-peruana-estrena-web-institucional-con-informacion-de-sus-competencias/`). No se identificó licencia de datos que permita extracción y redistribución en FijasPro.
+- El portal oficial de Liga 1 publica resultados por fecha (ejemplos: Clausura fecha 1 y fecha 19), útiles para verificación manual, no equivalen a una licencia de redistribución del conjunto completo.
+- Se inspeccionó el proyecto comunitario `LordEnnard14/liga1-apertura-2025-Data-Analytics`. Su CSV contiene 171 filas de resultados del Apertura 2025, pero el repositorio no tiene archivo LICENSE. Su README declara que los datos fueron obtenidos de Meridianbet y que el proyecto es para fines educativos. No se importó porque no hay permiso/licencia de redistribución confirmada y solo cubre el Apertura.
+- PeruFutbolStats declara que sus resultados Liga 1 se registran manualmente durante transmisiones de L1 Max y se revisan; no se encontró licencia abierta para reutilizar/redistribuir su base.
+- Footiqo ofrece CSV/Excel descargables con resultados y estadísticas históricas, pero no se encontró permiso explícito de redistribución de sus datos.
+- IPD/Plataforma Nacional de Datos Abiertos mantiene un dataset con licencia ODC Attribution, pero su contenido es el registro administrativo de ligas inscritas, no fixtures ni resultados.
+### Decisión
+No se importan fuentes sin licencia/permiso verificable, aunque permitan consultar o descargar datos. Próximas vías válidas: solicitar autorización al titular/proveedor, obtener un feed/API con derechos de almacenamiento y redistribución, o usar un dataset que declare expresamente licencia abierta para los datos subyacentes.
