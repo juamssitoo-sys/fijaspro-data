@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-11-19",
+  "source": "https://github.com/openfootball/football.json",
+  "source_license": "CC0-1.0 (upstream repository states its schema, data and scripts are public domain)",
+  "import_scope": "2025-26 first divisions only; raw JSON copied without normalization",
+  "records": [
+    {
+      "source": "2025-26/en.1.json",
+      "destination": "data/raw/openfootball/2025-26/en.1.json",
+      "source_sha": "41e223ee5954e6b634beb4bc70d7188b3183c665",
+      "commit_sha": "5a651a20ff1bf80c7d49bae6d6b5457b4c81a853",
+      "competition": "English Premier League 2025/26",
+      "matches": 380,
+      "first_date": "2025-08-15",
+      "last_date": "2026-05-24",
+      "bytes": 108493
+    },
+    {
+      "source": "2025-26/es.1.json",
+      "destination": "data/raw/openfootball/2025-26/es.1.json",
+      "source_sha": "ca95ceb8861f8f1ae876eb066e71148ff773425b",
+      "commit_sha": "f9ed70f01112fcbb009232c1c87007ba3d59c8da",
+      "competition": "Spain Primera División 2025/26",
+      "matches": 380,
+      "first_date": "2025-08-15",
+      "last_date": "2026-05-24",
+      "bytes": 108489
+    },
+    {
+      "source": "2025-26/de.1.json",
+      "destination": "data/raw/openfootball/2025-26/de.1.json",
+      "source_sha": "320994ff4b376c0aa7abe7929f9b9740cfc0eff5",
+      "commit_sha": "c1efa57d281df18eb9f3889dd707fb78a4a9b29c",
+      "competition": "Deutsche Bundesliga 2025/26",
+      "matches": 306,
+      "first_date": "2025-08-22",
+      "last_date": "2026-05-16",
+      "bytes": 88145
+    },
+    {
+      "source": "2025-26/fr.1.json",
+      "destination": "data/raw/openfootball/2025-26/fr.1.json",
+      "source_sha": "b6eec1251b125725d32efe85c8a969b68765d26a",
+      "commit_sha": "c49be15b3a7f538c51f8bed5007204c9fa6b2746",
+      "competition": "French Ligue 1 2025/26",
+      "matches": 306,
+      "first_date": "2025-08-15",
+      "last_date": "2026-05-17",
+      "bytes": 85845
+    },
+    {
+      "source": "2025-26/it.1.json",
+      "destination": "data/raw/openfootball/2025-26/it.1.json",
+      "source_sha": "00c57db6aa94737d6f965a67d1b89de58fcf3746",
+      "commit_sha": "6ab4d7bf0000d5f38a7dab9c9b85eb80196a800e",
+      "competition": "Italian Serie A 2025/26",
+      "matches": 380,
+      "first_date": "2025-08-23",
+      "last_date": "2026-05-24",
+      "bytes": 105202
+    }
+  ]
+}
