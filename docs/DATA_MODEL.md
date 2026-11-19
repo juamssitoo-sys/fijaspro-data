@@ -36,3 +36,8 @@ NBA `season_type`: `preseason`, `regular_season`, `in_season_tournament`, `play_
 - No mezclar estadísticas de temporada regular con playoffs.
 - Claves únicas recomendadas: (provider, provider_match_id), y para stats (provider, provider_match_id, provider_entity_id).
 - Registrar los campos realmente soportados por cada proveedor en el catálogo de cobertura.
+
+
+## Sincronización automática de partidos
+
+Ver [docs/AUTOMATIC_MATCH_UPDATES.md](AUTOMATIC_MATCH_UPDATES.md). El modelo debe distinguir estado deportivo de estado de sincronización, conservar IDs de proveedor y marcas de tiempo, y permitir reconciliar correcciones posteriores sin perder auditoría. Los partidos finalizados deben actualizar resultados y estadísticas automáticamente desde un feed autorizado.
