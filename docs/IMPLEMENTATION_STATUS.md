@@ -123,3 +123,11 @@ No se encontraron archivos verificables para esas competiciones en las rutas con
 - IPD/Plataforma Nacional de Datos Abiertos mantiene un dataset con licencia ODC Attribution, pero su contenido es el registro administrativo de ligas inscritas, no fixtures ni resultados.
 ### Decisión
 No se importan fuentes sin licencia/permiso verificable, aunque permitan consultar o descargar datos. Próximas vías válidas: solicitar autorización al titular/proveedor, obtener un feed/API con derechos de almacenamiento y redistribución, o usar un dataset que declare expresamente licencia abierta para los datos subyacentes.
+
+
+## Consolidación del inventario — 2026-11-19
+- Se consolidó la cobertura en `docs/COVERAGE.md` y se corrigió el estado del README, que todavía describía la ingesta como pendiente.
+- Inventario actual: 13 archivos raw de 13 alcances competición/temporada; total aritmético de encabezados fuente: 3,333. Este total no es un conteo normalizado ni deduplicado.
+- Los cinco JSON de primera división 2025/26 fueron parseados desde el repositorio destino. Los ocho archivos Football.TXT permanecen en bruto; sus cantidades son declaraciones de encabezado.
+- No se rellenaron Liga 1, fases principales UEFA ni NBA con datos sin derechos verificados.
+- Pendientes técnicos reales: parser/normalizador, validación fila por fila, deduplicación, estadísticas de jugadores/equipos, auditoría NBA y conexión al backend. No se declara producción ni integración completada.
