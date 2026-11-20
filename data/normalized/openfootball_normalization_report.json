@@ -1,0 +1,101 @@
+{
+  "provider": "openfootball",
+  "records": 3276,
+  "duplicate_keys": 0,
+  "files": [
+    {
+      "file": "data/raw/openfootball/2025-26/de.1.json",
+      "competition_id": "soccer_germany_bundesliga",
+      "season": "2025-26",
+      "parsed_records": 306,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/2025-26/en.1.json",
+      "competition_id": "soccer_epl",
+      "season": "2025-26",
+      "parsed_records": 380,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/2025-26/es.1.json",
+      "competition_id": "soccer_spain_la_liga",
+      "season": "2025-26",
+      "parsed_records": 380,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/2025-26/fr.1.json",
+      "competition_id": "soccer_france_ligue_one",
+      "season": "2025-26",
+      "parsed_records": 306,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/2025-26/it.1.json",
+      "competition_id": "soccer_italy_serie_a",
+      "season": "2025-26",
+      "parsed_records": 380,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/champions-league/2025-26/cl.txt",
+      "competition_id": "soccer_uefa_champs_league",
+      "season": "2025-26",
+      "parsed_records": 189,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/champions-league/2025-26/confq.txt",
+      "competition_id": "soccer_uefa_europa_conference_league",
+      "season": "2025-26",
+      "parsed_records": 256,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/champions-league/2025-26/elq.txt",
+      "competition_id": "soccer_uefa_europa_league",
+      "season": "2025-26",
+      "parsed_records": 82,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/internationals/uefa_nations_league/2024_uefa_nations_league.txt",
+      "competition_id": "soccer_uefa_nations_league",
+      "season": "2024-25",
+      "parsed_records": 158,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/south-america/argentina/2025_ar1.txt",
+      "competition_id": "soccer_argentina_primera_division",
+      "season": "2025",
+      "parsed_records": 240,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/south-america/brazil/2025_br1.txt",
+      "competition_id": "soccer_brazil_campeonato",
+      "season": "2025",
+      "parsed_records": 380,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/south-america/copa-libertadores/2025_copal.txt",
+      "competition_id": "soccer_conmebol_libertadores",
+      "season": "2025",
+      "parsed_records": 155,
+      "unparsed_score_lines": 0
+    },
+    {
+      "file": "data/raw/openfootball/south-america/copa-libertadores/2025_copas.txt",
+      "competition_id": "soccer_conmebol_copa_sudamericana",
+      "season": "2025",
+      "parsed_records": 64,
+      "unparsed_score_lines": 0
+    }
+  ],
+  "duplicate_samples": [],
+  "time_policy": "date retained as calendar date; source_local_time preserved without timezone conversion",
+  "rights_note": "CC0 is an upstream claim; verify third-party rights before public redistribution."
+}
