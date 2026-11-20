@@ -54,7 +54,7 @@ def split_teams_and_score(text: str):
     home, away = re.split(r"\s+v\s+", before, maxsplit=1)
     return home.strip(), away.strip(), parse_score_tail(m.group("score"), m.group("tail"))
 
-def parse_football_txt(path: Path, competition_id: str, season: str, provider_url: str):
+def parse_football_txt(path: Path, competition_id: str, season: str, provider_url: str, source_path: str | None = None):
     lines = path.read_text(encoding="utf-8-sig").splitlines()
     header = next((x for x in lines if x.startswith("= ")), "")
     year_match = re.search(r"(20\d{2})", header)
@@ -97,7 +97,7 @@ def parse_football_txt(path: Path, competition_id: str, season: str, provider_ur
                 "stage": stage, "date": current_date, "source_local_time": local_time,
                 "status": "played", "home_team": home, "away_team": away,
                 **scores, "source": {"provider": "openfootball", "source_url": provider_url,
-                    "provider_record_id": None, "source_file": str(path.as_posix()),
+                    "provider_record_id": None, "source_file": source_path or str(path.as_posix()),
                     "source_line": line_no, "license": "upstream CC0 claim; review third-party rights"}
             })
             continue
@@ -191,7 +191,7 @@ def main():
             parsed = parse_json_file(path, cid, season, url)
             skipped = 0
         else:
-            parsed, skipped = parse_football_txt(path.relative_to(root), cid, season, url)
+            parsed, skipped = parse_football_txt(path, cid, season, url, source_path=path.relative_to(root).as_posix())
         records.extend(parsed)
         file_reports.append({"file": path.relative_to(root).as_posix(), "competition_id": cid,
             "season": season, "parsed_records": len(parsed), "unparsed_score_lines": skipped})
