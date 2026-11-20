@@ -115,7 +115,7 @@ def parse_football_txt(path: Path, competition_id: str, season: str, provider_ur
                 "extra_time": False, "penalties": False, "awarded": False,
                 "source_score_note": None,
                 "source": {"provider": "openfootball", "source_url": provider_url,
-                    "provider_record_id": None, "source_file": str(path.as_posix()),
+                    "provider_record_id": None, "source_file": source_path or str(path.as_posix()),
                     "source_line": line_no, "license": "upstream CC0 claim; review third-party rights"}
             })
             continue
@@ -124,7 +124,7 @@ def parse_football_txt(path: Path, competition_id: str, season: str, provider_ur
             skipped += 1
     return out, skipped
 
-def parse_json_file(path: Path, competition_id: str, season: str, provider_url: str):
+def parse_json_file(path: Path, competition_id: str, season: str, provider_url: str, source_path: str | None = None):
     obj = json.loads(path.read_text(encoding="utf-8"))
     out = []
     for idx, m in enumerate(obj.get("matches", []), 1):
@@ -188,7 +188,7 @@ def main():
             continue
         cid, season, url = infer(path.relative_to(root))
         if path.suffix.lower() == ".json":
-            parsed = parse_json_file(path, cid, season, url)
+            parsed = parse_json_file(path, cid, season, url, source_path=path.relative_to(root).as_posix())
             skipped = 0
         else:
             parsed, skipped = parse_football_txt(path, cid, season, url, source_path=path.relative_to(root).as_posix())
