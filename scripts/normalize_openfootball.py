@@ -28,8 +28,9 @@ def parse_score_tail(score: str, tail: str) -> dict:
     parts = [int(x) for x in re.split(r"\s*[-–]\s*", score)]
     # In OpenFootball, "5-6 pen. 2-1 a.e.t." means penalties 5-6,
     # while 2-1 is the match score after extra time.
-    penalty_score = re.search(r"pen\.\s*(\d+)\s*[-–]\s*(\d+)", tail, re.I)
-    match_score = [int(penalty_score.group(1)), int(penalty_score.group(2))] if penalty_score else parts
+    match_after_pen = re.search(r"pen\.\s*(\d+)\s*[-–]\s*(\d+)", tail, re.I)
+    penalty_score = parts if match_after_pen else None
+    match_score = [int(match_after_pen.group(1)), int(match_after_pen.group(2))] if match_after_pen else parts
     result = {"home_score": match_score[0], "away_score": match_score[1],
               "half_time_home_score": None, "half_time_away_score": None,
               "penalty_home_score": None, "penalty_away_score": None,
@@ -148,7 +149,7 @@ def parse_json_file(path: Path, competition_id: str, season: str, provider_url: 
             "extra_time": False, "penalties": False, "awarded": False,
             "source_score_note": None,
             "source": {"provider": "openfootball", "source_url": provider_url,
-                "provider_record_id": None, "source_file": str(path.as_posix()),
+                "provider_record_id": None, "source_file": source_path or str(path.as_posix()),
                 "source_record": idx, "license": "upstream CC0 claim; review third-party rights"}
         })
     return out
