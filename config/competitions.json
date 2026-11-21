@@ -63,6 +63,78 @@
       "id": "soccer_uefa_nations_league",
       "name": "UEFA Nations League",
       "country": "International"
+    },
+    {
+      "id": "soccer_denmark_superliga",
+      "name": "Danish Superliga",
+      "country": "Denmark",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_scotland_premiership",
+      "name": "Scottish Premiership",
+      "country": "Scotland",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_belgium_first_division_a",
+      "name": "Belgian Pro League",
+      "country": "Belgium",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_colombia_primera_a",
+      "name": "Colombian Primera A",
+      "country": "Colombia",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_mexico_liga_mx",
+      "name": "Liga MX",
+      "country": "Mexico",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_portugal_liga",
+      "name": "Liga Portugal",
+      "country": "Portugal",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_netherlands_eredivisie",
+      "name": "Eredivisie",
+      "country": "Netherlands",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_turkey_super_lig",
+      "name": "Süper Lig",
+      "country": "Turkey",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_sweden_allsvenskan",
+      "name": "Allsvenskan",
+      "country": "Sweden",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_croatia_hnl",
+      "name": "Croatian Football League",
+      "country": "Croatia",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_greece_super_league",
+      "name": "Greek Super League",
+      "country": "Greece",
+      "source": "oritzio/football-database"
+    },
+    {
+      "id": "soccer_israel_ligat_al",
+      "name": "Ligat Al",
+      "country": "Israel",
+      "source": "oritzio/football-database"
     }
   ],
   "basketball": [
@@ -81,5 +153,5 @@
       ]
     }
   ],
-  "note": "Initial catalog extracted from the current FijasPro backend configuration; verify against frontend before declaring complete."
+  "note": "Initial catalog extracted from the current FijasPro backend configuration; verify against frontend before declaring complete. Team catalog reference added from oritzio/football-database; it is not a fixtures/results source."
 }
